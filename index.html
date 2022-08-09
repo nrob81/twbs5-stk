@@ -13,29 +13,67 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </head>
+  
   <body>
     <nav class="navbar navbar-expand bg-light mb-3">
       <div class="container">
         <a class="navbar-brand" href="#">Brand</a>        
         <div class="navbar-nav">
           <span class="navbar-text me-3">Prihlásený ako: admin</span>
-          <a class="nav-link btn btn-outline-secondary" href="/page2.html">Odhlásiť</a>
+          <a class="nav-link btn btn-outline-secondary" href="#">Odhlásiť</a>
         </div>
       </div>
     </nav>
 
     <main class="container">
       
-    <form class="row row-cols-sm-auto g-3 align-items-center">
-      <div class="col-12">
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="EČV">
-      </div>
-    
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Hľadať</button>
-      </div>
-    </form>
+      <!-- search form -->
+      <form class="row row-cols-sm-auto g-3 mb-5">
+        <div class="col-12">
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="EČV">
+        </div>
+      
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Hľadať</button>
+        </div>
+      </form>
+
+
+      <!-- results -->
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">EČV</th>
+            <th scope="col">Druh kontroly</th>
+            <th scope="col">Dátum</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">KN123AA</th>
+            <td>EK</td>
+            <td>11.09.2020</td>
+            <td class="text-end"><button type="button" class="btn btn-sm btn-info">Detail</button></td>
+          </tr>
+          <tr>
+            <th scope="row">KN999FK</th>
+            <td>TK</td>
+            <td>12.09.2020</td>
+            <td class="text-end"><button type="button" class="btn btn-sm btn-info">Detail</button></td>
+          </tr>
+          <tr>
+            <th scope="row">KN567ER</th>
+            <td>TK</td>
+            <td>01.01.2021</td>
+            <td class="text-end"><button type="button" class="btn btn-sm btn-info">Detail</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="/page2.html" class="btn btn-primary">Pridať</a>
 
     </main>
+
+    <footer>Copyright (c) 2022 by Brand. All rights reserved</footer>
   </body>
 </html>

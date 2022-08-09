@@ -1,0 +1,16 @@
+table .btn-sm {
+  --bs-btn-padding-y: 0;
+}
+table .btn {
+  visibility: hidden;
+}
+
+table tr:hover .btn {
+  visibility: inherit;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 1px #eee solid
+}
