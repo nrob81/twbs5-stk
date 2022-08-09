@@ -11,21 +11,100 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand bg-light mb-3">
       <div class="container">
-        <a class="navbar-brand" href="/index.html">Brand</a>        
+        <a class="navbar-brand" href="/index.html">Brand</a>
         <div class="navbar-nav">
           <span class="navbar-text me-3">Prihlásený ako: admin</span>
-          <a class="nav-link btn btn-outline-secondary" href="/page2.html">Odhlásiť</a>
+          <a class="nav-link btn btn-outline-secondary" href="/page2.html"
+            >Odhlásiť</a
+          >
         </div>
       </div>
     </nav>
 
     <main class="container">
-      <h2>page 2</h2>
+      <form>
+        <fieldset class="row g-3">
+          <legend>Pridať vozidlo</legend>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputEcv" class="form-label">EČV</label>
+            <input type="text" class="form-control" id="inputEcv" />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputDruh" class="form-label">Druh kontroly</label>
+            <select class="form-select" id="inputDruh">
+              <option selected></option>
+              <option value="tk">TK</option>
+              <option value="ek">EK</option>
+            </select>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputKategoria" class="form-label"
+              >Kategória vozidla</label
+            >
+            <select class="form-select" id="inputKategoria">
+              <option selected></option>
+              <option>L</option>
+              <option>M</option>
+              <option>N</option>
+              <option>O</option>
+              <option>T</option>
+            </select>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputDate" class="form-label">Dátum</label>
+            <input type="date" class="form-control" id="inputDate" />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputType" class="form-label">Typ vozidla</label>
+            <select class="form-select" id="inputType">
+              <option selected></option>
+              <option>Autobus</option>
+              <option>Taxi</option>
+            </select>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputFirstEvid" class="form-label d-md-none d-lg-inline-block">Dátum prvej evidencie</label>
+            <label for="inputFirstEvid" class="form-label d-none d-sm-none d-lg-none d-md-inline-block">Dátum prvej evid.</label>
+            <input type="date" class="form-control" id="inputFirstEvid" />
+          </div>
+
+          <div class="col-sm-6 col-md-3 w-100"></div>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputEmail" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="inputEmail" />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label for="inputPhone" class="form-label">Tel. číslo</label>
+            <input type="text" class="form-control" id="inputPhone" />
+          </div>
+
+          <div class="col-sm-6 col-md-3 w-100"></div>
+
+          <div class="col-sm-6 col-md-3">
+            <button type="submit" class="btn btn-primary">Uložiť</button>
+            <a href="/index.html" class="btn btn-secondary">Späť</a>
+          </div>
+        </fieldset>
+      </form>
     </main>
+
+    <footer>Copyright (c) 2022 by Brand. All rights reserved</footer>
   </body>
 </html>

@@ -14,3 +14,7 @@ footer {
   margin-top: 1rem;
   border-top: 1px #eee solid
 }
+
+form .w-100 {
+  margin-top: 0px;
+}
